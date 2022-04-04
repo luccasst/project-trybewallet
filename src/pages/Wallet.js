@@ -11,17 +11,50 @@ class Wallet extends React.Component {
 
   render() {
     const { user, wallet } = this.props;
+    const paymentMethod = ['Dinheiro', 'Cartão de crédito', 'Cartão de débito'];
+    const category = ['Alimentação', 'Lazer', 'Trabalho', 'Transporte', 'Saúde'];
     return (
       <div>
         <header>
           <div>TrybeWallet</div>
           <h3 data-testid="email-field">{ user}</h3>
           <p data-testid="total-field">Valor: 0</p>
-          <p data-testid="header-currency-field">Moeda: BRL</p>
+          <p data-testid="header-currency-field">moeda: BRL</p>
         </header>
-        <select>
-          { wallet.map((info) => (<option key={ info }>{info}</option>)) }
-        </select>
+        <form>
+          <label htmlFor="input-value">
+            Valor:
+            <input type="number" data-testid="value-input" id="input-value" />
+          </label>
+          <label htmlFor="input-description">
+            Descrição:
+            <input type="text" data-testid="description-input" id="input-description" />
+          </label>
+          <label htmlFor="input-moeda">
+            Moeda:
+            <select id="input-moeda">
+              { wallet.map((info) => (<option key={ info }>{info}</option>)) }
+            </select>
+          </label>
+          <label htmlFor="input-select">
+            Método de pagamento:
+            <select id="input-select" data-testid="method-input">
+              { paymentMethod.map((method) => (
+                <option key={ method }>
+                  { method }
+                </option>))}
+            </select>
+          </label>
+          <label htmlFor="select-category">
+            Categoria:
+            <select data-testid="tag-input">
+              { category.map((categ) => (
+                <option key={ categ }>
+                  { categ }
+                </option>))}
+            </select>
+          </label>
+        </form>
       </div>
     );
   }
