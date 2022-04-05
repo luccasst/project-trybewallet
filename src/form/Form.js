@@ -84,6 +84,7 @@ class Form extends React.Component {
     );
   }
 }
+/* Resolução feita com ajuda de Ary Barbosa, turma 16 */
 
 Form.propTypes = {
   inputValor: PropTypes.string.isRequired,

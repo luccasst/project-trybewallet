@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { fetchCurrencie, fetchExpense } from '../actions';
 
 import Form from '../form/Form';
+import Table from '../form/Table';
 
 class Wallet extends React.Component {
   constructor() {
@@ -77,6 +78,7 @@ class Wallet extends React.Component {
           handleChanges={ this.handleChange }
           wallet={ wallet }
         />
+        <Table />
       </div>
     );
   }
