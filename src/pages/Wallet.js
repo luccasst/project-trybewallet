@@ -57,7 +57,7 @@ class Wallet extends React.Component {
   }
 
   render() {
-    const { user, wallet } = this.props;
+    const { user, wallet, sumExpenses } = this.props;
     const { value, description, currency, method, tag } = this.state;
     const amount = this.handleTotalSum();
     return (
@@ -78,7 +78,9 @@ class Wallet extends React.Component {
           handleChanges={ this.handleChange }
           wallet={ wallet }
         />
-        <Table />
+        <Table
+          expenses={ sumExpenses }
+        />
       </div>
     );
   }
