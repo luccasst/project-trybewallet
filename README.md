@@ -16,6 +16,10 @@
 
 ---
 <p>
+<h1>Funcionamento da aplicação<h1>
+<p>Para rodar a aplicação é necessário executar um dos comandos abaixo.<p>
+    <input>npm start<input>
+    
 
 
     
