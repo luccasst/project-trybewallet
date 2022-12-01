@@ -16,9 +16,10 @@
 
 ---
 <p>
-<h1>Funcionamento da aplicação<h1>
-<p>Para rodar a aplicação é necessário executar um dos comandos abaixo.<p>
-    <input>npm start<input>
+<h1>Requisitos desenvolvidos no projeto:<h1>
+<p>
+- 1. Crie uma página inicial de login com os seguintes campos e características
+<p>
     
 
 
