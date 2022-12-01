@@ -15,7 +15,7 @@ Neste projeto, fui capaz de:
 - Criar actions assíncronas na sua aplicação React que faz uso de Redux.
 
 ---
-<p>
+
 # Requisitos desenvolvidos no projeto:
 <p> Requisitos obrigatórios:
 
