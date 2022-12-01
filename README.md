@@ -16,7 +16,7 @@ Neste projeto, fui capaz de:
 
 ---
 <p>
-<h2>Requisitos desenvolvidos no projeto:<h2>
+# Requisitos desenvolvidos no projeto:
 <p> Requisitos obrigatórios:
 
 - 1 - Crie uma página inicial de login com os seguintes campos e características
