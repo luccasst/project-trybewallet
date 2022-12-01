@@ -16,7 +16,7 @@
 
 ---
 <p>
-<h1>Requisitos desenvolvidos no projeto:<h1>
+<h2>Requisitos desenvolvidos no projeto:<h2>
 <p> Requisitos obrigatórios:
 
 - 1 Crie uma página inicial de login com os seguintes campos e características
