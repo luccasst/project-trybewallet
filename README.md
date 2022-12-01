@@ -1,6 +1,6 @@
-<h1>Boas vindas ao repositório do Trybe Wallet!<h1>
-<h2>Habilidades desenvolvidas<h2>
-<p>Neste projeto, fui capaz de:
+# Boas vindas ao repositório do Trybe Wallet!
+# Habilidades desenvolvidas
+Neste projeto, fui capaz de:
 
 - Criar um store Redux em aplicações React
 
