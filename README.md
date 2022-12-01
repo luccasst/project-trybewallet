@@ -18,8 +18,11 @@
 <p>
 <h1>Requisitos desenvolvidos no projeto:<h1>
 <p>
+
 - 1. Crie uma página inicial de login com os seguintes campos e características
+
 - 2. Crie uma página para sua carteira com as seguintes características
+
 - 2. Crie uma página para sua carteira com as seguintes características
     
 ---
