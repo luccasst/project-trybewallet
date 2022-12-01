@@ -25,7 +25,7 @@
 
 - 3 - Crie um header para a página de carteira contendo as seguintes características
     
-- 4 - Implemente a lógica para armazenar no estado global as siglas das moedas que vêm da API
+- 4 - Implemente a lógica para armazenar no estado global as siglas das moedas que vem da API
  
 - 5 - Desenvolva um formulário para adicionar uma despesa contendo as seguintes características
     
