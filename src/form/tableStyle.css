@@ -1,0 +1,80 @@
+.table {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+vertical-align: middle;
+flex-direction: inherit;
+height: 100%;
+width: 100vw;
+}
+
+
+.descri {
+position: relative;
+  left: 15px;  
+  justify-content: center;
+}
+
+.tag {
+  position: relative;
+  justify-content: center;
+  
+}
+
+.method {
+  position: relative;
+  left: 15px;
+  width: 90px;
+  word-wrap: normal;
+}
+
+.value {
+  position: relative;
+  left: 18px;
+  justify-content: center;
+  width: 70px;
+
+}
+
+.currency {
+  position: relative;
+  left: 29px;
+  width: 120px;
+  word-wrap: normal;
+}
+
+.metodos {
+  position: relative;
+  margin-top: 10px;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.descrip {
+  position: relative;
+  width: 150px;
+word-wrap: normal;
+}
+
+.utilizado {
+  position: relative;
+  left: 27px;
+  width: 90px;
+  word-wrap: normal;
+}
+
+.conversao {
+  position: relative;
+  left: 27px;
+  width: 90px;
+  word-wrap: normal;
+}
+
+.real {
+  position: relative;
+  left: 27px;
+  width: 90px;
+  word-wrap: normal;
+}

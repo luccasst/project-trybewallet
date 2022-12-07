@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './formStyle.css';
 
 class Form extends React.Component {
   render() {
@@ -9,10 +10,14 @@ class Form extends React.Component {
       inputDescription, inputCurrency,
       handleButtons, handleChanges, wallet } = this.props;
     return (
-      <form>
-        <label htmlFor="input-value">
+      <div>
+        <label
+          className="value"
+          htmlFor="input-value"
+        >
           Valor:
           <input
+            className="valor"
             type="number"
             name="value"
             data-testid="value-input"
@@ -21,9 +26,13 @@ class Form extends React.Component {
             onChange={ handleChanges }
           />
         </label>
-        <label htmlFor="input-description">
+        <label
+          className="descript"
+          htmlFor="input-description"
+        >
           Descrição:
           <input
+            className="descricao"
             type="text"
             name="description"
             data-testid="description-input"
@@ -32,9 +41,13 @@ class Form extends React.Component {
             onChange={ handleChanges }
           />
         </label>
-        <label htmlFor="moeda">
+        <label
+          className="coin"
+          htmlFor="moeda"
+        >
           Moeda:
           <select
+            className="moeda"
             name="currency"
             id="moeda"
             data-testid="currency-input"
@@ -44,9 +57,13 @@ class Form extends React.Component {
             { wallet.map((info) => (<option key={ info }>{ info }</option>)) }
           </select>
         </label>
-        <label htmlFor="input-select">
+        <label
+          className="method"
+          htmlFor="input-select"
+        >
           Método de pagamento:
           <select
+            className="pagamento"
             id="input-select"
             data-testid="method-input"
             name="method"
@@ -59,9 +76,13 @@ class Form extends React.Component {
               </option>))}
           </select>
         </label>
-        <label htmlFor="select-category">
+        <label
+          className="category"
+          htmlFor="select-category"
+        >
           Categoria:
           <select
+            className="pagamento"
             data-testid="tag-input"
             id="select-category"
             name="tag"
@@ -75,12 +96,13 @@ class Form extends React.Component {
           </select>
         </label>
         <button
+          className="button"
           onClick={ handleButtons }
           type="button"
         >
-          Adicionar despesa
+          Adicionar
         </button>
-      </form>
+      </div>
     );
   }
 }

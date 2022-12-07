@@ -1,0 +1,87 @@
+.valor {
+   border-radius: 5px;
+   height: 20px;
+   width: 80px;
+   margin-top: 10px;
+   position: sticky;
+   top: 50px;
+   left: 50px;
+   margin-left: 10px;
+}
+
+.descricao {
+    border-radius: 5px;
+    height: 20px;
+    width: 80px;
+   margin-top: 10px;
+   margin-left: 10px;
+}
+
+.moeda {
+    border-radius: 5px;
+    height: 25px;
+    width: 100px;
+   margin-top: 10px;
+   margin-left: 10px;
+}
+
+.pagamento {
+    border-radius: 5px;
+    height: 25px;
+    width: 100px;
+   margin-top: 10px;
+   margin-left: 10px;
+
+}
+
+.button {
+    border-radius: 10px;
+    height: 25px;
+    width: 90px;
+    background-color: rgb(20, 167, 64);
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-left: 1px;
+}
+
+.body-wallet {
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 15px;
+	padding-top: .15rem;
+
+  }
+
+  .value {
+    right: 5px;
+   margin-left: 10px;
+  }
+
+  .descript {
+   margin-left: 15px;
+   padding: 15px;
+   right: 5px;
+  }
+
+  .coin {
+    margin-left: 1px;
+    padding: 1px;
+    right: 5px;
+  }
+
+  .method {
+    margin-left: 1px;
+    padding: 2px;
+    right: 5px;
+  }
+
+  .category {
+    margin-left: 10px;
+    padding: 15px;
+    right: 5px;
+  }

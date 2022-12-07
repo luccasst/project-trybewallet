@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { loginSubmit } from '../actions';
+import './loginPageStyle.css';
 
 class Login extends React.Component {
   constructor() {
@@ -41,35 +42,45 @@ class Login extends React.Component {
   render() {
     const { password, email, isDisabled } = this.state;
     return (
-      <div>
-        <label htmlFor="email">
-          E-mail:
-          <input
-            type="text"
-            data-testid="email-input"
-            name="email"
-            value={ email }
-            onChange={ this.handleWithChange }
-          />
-        </label>
-        <label htmlFor="psswd">
-          Senha:
-          <input
-            type="password"
-            id="psswd"
-            data-testid="password-input"
-            name="password"
-            value={ password }
-            onChange={ this.handleWithChange }
-          />
-        </label>
-        <button
-          disabled={ isDisabled }
-          onClick={ this.handleSubmit }
-          type="button"
-        >
-          Entrar
-        </button>
+      <div className="login-page">
+        <div className="login-page-body">
+          <h2 className="logoWallet">
+            TrybeWallet
+          </h2>
+          <form className="login-form">
+            <label htmlFor="email">
+              <input
+                className="email"
+                type="text"
+                data-testid="email-input"
+                name="email"
+                value={ email }
+                placeholder="Email"
+                onChange={ this.handleWithChange }
+              />
+            </label>
+            <label htmlFor="psswd">
+              <input
+                className="senha"
+                type="password"
+                id="psswd"
+                data-testid="password-input"
+                name="password"
+                value={ password }
+                placeholder="Senha"
+                onChange={ this.handleWithChange }
+              />
+            </label>
+            <button
+              className="login-bnt"
+              disabled={ isDisabled }
+              onClick={ this.handleSubmit || this.buttonEnable }
+              type="button"
+            >
+              Entrar
+            </button>
+          </form>
+        </div>
       </div>
     );
   }

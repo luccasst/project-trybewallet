@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { fetchCurrencie, fetchExpense } from '../actions';
+import './walletStyle.css';
 
 import Form from '../form/Form';
 import Table from '../form/Table';
@@ -63,24 +64,39 @@ class Wallet extends React.Component {
     return (
       <div>
         <header>
-          <div>TrybeWallet</div>
-          <h3 data-testid="email-field">{ user}</h3>
-          <span data-testid="total-field">{ amount }</span>
-          <p data-testid="header-currency-field">conversão: BRL</p>
+          <div className="body-header">
+            <h1>TrybeWallet</h1>
+          </div>
+          <h3 className="body-header" data-testid="email-field">{ user }</h3>
+          <div className="body-conversao">
+            <span data-testid="total-field">
+              Despesa Total: Conversão: BRL
+              { amount }
+            </span>
+          </div>
+
+          <p
+            className="body-conversao"
+            data-testid="header-currency-field"
+          />
         </header>
-        <Form
-          inputValor={ value }
-          inputDescription={ description }
-          inputCurrency={ currency }
-          inputMethod={ method }
-          inputTag={ tag }
-          handleButtons={ this.handleButtonSubmit }
-          handleChanges={ this.handleChange }
-          wallet={ wallet }
-        />
-        <Table
-          expenses={ sumExpenses }
-        />
+
+        <div className="body-wallet">
+          <Form
+            className="currency"
+            inputValor={ value }
+            inputDescription={ description }
+            inputCurrency={ currency }
+            inputMethod={ method }
+            inputTag={ tag }
+            handleButtons={ this.handleButtonSubmit }
+            handleChanges={ this.handleChange }
+            wallet={ wallet }
+          />
+          <Table
+            expenses={ sumExpenses }
+          />
+        </div>
       </div>
     );
   }

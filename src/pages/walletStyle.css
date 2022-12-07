@@ -1,0 +1,57 @@
+.body-header {
+  align-self: center;
+  display: flex;
+  width: 100vw;
+  border-radius: 10px;
+  padding-top: 10px;
+	padding-top: .15rem;
+  margin: 5px;
+  justify-content: center;
+  color: rgb(2, 2, 2);
+  font-family: c;
+}
+
+.body-conversao {
+  font-family: c;
+  align-self: center;
+  display: flex;
+  width: 100vw;
+  border-radius: 10px;
+  padding-top: 10px;
+	padding-top: .15rem;
+  margin: 5px;
+  justify-content: center;
+  color: rgb(8, 9, 10);
+}
+
+.body-wallet {
+  box-shadow: rgb(14, 12, 12) 0px 0px 3px 0px;
+  font-family: c;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  background-image: linear-gradient(#37bd5f, #bcbe14);
+  margin: 5px;
+
+}
+
+.body-user {
+  border-radius: 5px;
+  justify-content: center;
+  display: flex;
+  padding: 25px;
+  margin: 50px;
+}
+
+.despesa-total {
+    align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-bottom: 60px;
+  padding-top: 30px;
+}
+
+.currency {
+  margin-left: 2px;
+}
